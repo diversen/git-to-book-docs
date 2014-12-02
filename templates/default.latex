@@ -130,6 +130,21 @@ $if(lang)$
 \fi
 $endif$
 
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+$if(title)$
+\title{$title$}
+$endif$
+$if(subtitle)$
+\subtitle{$subtitle$}
+$endif$
+\author{$for(author)$$author$$sep$ \and $endfor$}
+\date{$date$}
+
+\begin{document}
+
 % change
 \begin{titlepage}
     \centering
@@ -147,20 +162,8 @@ $endif$
 \end{titlepage}
 
 % end change
-$for(header-includes)$
-$header-includes$
-$endfor$
 
-$if(title)$
-\title{$title$}
-$endif$
-$if(subtitle)$
-\subtitle{$subtitle$}
-$endif$
-\author{$for(author)$$author$$sep$ \and $endfor$}
-\date{$date$}
 
-\begin{document}
 $if(title)$
 \maketitle
 $endif$
