@@ -129,6 +129,24 @@ $if(lang)$
   \usepackage[$lang$]{babel}
 \fi
 $endif$
+
+% change
+\begin{titlepage}
+    \centering
+    \vfill
+    {\bfseries\Large
+        Performance Report\\
+        First Quarter 2011\\
+        \vskip2cm
+        A. Uthor\\
+    }    
+    \vfill
+    \includegraphics[width=4cm]{images/cover.png} % also works with logo.pdf
+    \vfill
+    \vfill
+\end{titlepage}
+
+% end change
 $for(header-includes)$
 $header-includes$
 $endfor$
