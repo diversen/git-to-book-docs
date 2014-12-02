@@ -6,7 +6,7 @@ When you add a new git URL to the system, gittobook will checkout the repo, and 
 
 # meta.yaml
 
-In the mata.yaml you can (and should) specify title, author, and other meta info used with pandoc. You can also specify build commands used, when pandoc executes the command. You can see an example here: <https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml>. You will see that the `format-arguments` are specific to gittobook, else it is a standard pandoc meata file. The `format-arguments` are the command line options given to pandoc. 
+In the mata.yaml you can (and should) specify title, author, and other meta info used with pandoc. You can also specify build commands used, when pandoc executes the command. You can see an example here: <https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml>. You will see that the `format-arguments` are specific to gittobook, else it is a standard pandoc meta file. The `format-arguments` are the command line options given to pandoc. 
 
 # Install local
 
@@ -16,7 +16,7 @@ Requirements:
 * php5 >= 5.3
 * mysql-server
 * pandoc
-* tex-live
+* texlive-full
 
 First clone the base system: 
 
