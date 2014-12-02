@@ -11,3 +11,5 @@ http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html
 latex engine 
 
 pdflatex, lualatex, or xelatex.
+
+https://github.com/jgm/pandoc/wiki/User-contributed-templates
