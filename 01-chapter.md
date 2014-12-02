@@ -1,12 +1,12 @@
 # Quickstart
 
-*Gittobook* (git-to-book) is an easy way to write to multiple formats using Markdown. It is basically a bridge between pandoc (<http://pandoc.org>) and git. Pandoc is used to generate the different formats, and git repos are used to store the written markdown files, and assets, such as pandoc templates and css. There is a online demo version, which you can log in to using a facebook or google account. This can be found on <http://gittobook.org>. The online version will export to Epub, Mobi and HTML. If you install it on your own server you will be able to export to any kind format supported by pandoc, e.g. PDF. 
+*Gittobook* (git-to-book) is an easy way to write to multiple formats using Markdown. It is basically a bridge between pandoc (<http://pandoc.org>) and git. Pandoc is used to generate the different formats, and git repos are used to store the written markdown files, and assets, such as pandoc templates and css. There is a online demo version, which you can log in to using a facebook or google account. This can be found on <http://gittobook.org>. The online version will export to Epub, Mobi and HTML. If you install it on your own server you will be able to export to any kind of format supported by pandoc, e.g. PDF. 
 
-When you add a new git URL to the system, gittobook will checkout the repo, and look for any markdown files (`.md`). It will always checkout the master branch. Note: `README.md` will be ignored. The markdown files found are collected into one document, which is then transformed using pandoc. The gittobook will prepend a `meta.yaml` file if one is found (for adding meta data to the document - such as author, title, cover-image, etc). You can browse this documentation on <https://github.com/diversen/git-to-book-docs>, which is the repo used to generate the gittobook docs, and suggest edits. If you work on a larger book you can just add some directories to keep you content in. The file structure is parsed so that any directories are first examined for markdown. This resembles the way <http://github.com> displays files, when looking at a repo online.  
+When you add a new git URL to the system, gittobook will checkout the repo, and look for any markdown files (`.md`). It will always checkout the master branch. Note: `README.md` will be ignored. The markdown files found are collected into one document, which is then transformed using pandoc. The gittobook will prepend a `meta.yaml` file if one is found (for adding meta data to the document - such as author, title, cover-image, etc). You can browse this documentation on <https://github.com/diversen/git-to-book-docs>, which is the repo used to generate the gittobook docs, and suggest edits. If you work on a larger book you can just add some directories to keep you content in. The file structure is parsed so that any directories are first examined for markdown or `.md` files. This resembles the way <http://github.com> displays files, when looking at a repo online.  
 
 ## meta.yaml
 
-In the mata.yaml you can (and should) specify title, author, and other meta info used with pandoc. You can also specify build commands used when pandoc executes the command. You can see an example here:  
+In the mata.yaml you can (and should) specify title, author, and other meta info used with pandoc. You can also specify build commands used, when pandoc executes the command. You can see an example here:  
 
 ~~~yaml
 ---
@@ -18,7 +18,7 @@ cover-image: images/cover.png
 
 # pandoc format arguments
 format-arguments:
-    pdf: -s -S   --latex-engine pdflatex --template=templates/default.latex --number-sections -V documentclass=memoir -V geometry:margin=1in -V lang=danish --toc --chapters
+    pdf: -s -S   --latex-engine pdflatex --template=templates/default.latex --number-sections -V documentclass=memoir -V geometry:margin=1in -V lang=english --toc --chapters
     html: -s -S --chapters --template=templates/bootstrap.html --css=css/bootstrap.css --number-sections --toc -t html5
     epub: -s -S  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4 
 ...
@@ -57,7 +57,7 @@ Select gittobook profile when asked.
 
 Set correct perms for public files after install (e.g. upload folder)
 
-    // you will need to be root user as we change 
+    // you will need to be root user as we change
     // the perms to be www-data
     sudo ./coscli.sh file --chmod-files
 
