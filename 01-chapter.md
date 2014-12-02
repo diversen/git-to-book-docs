@@ -6,25 +6,7 @@ When you add a new git URL to the system, gittobook will checkout the repo, and 
 
 ## meta.yaml
 
-In the mata.yaml you can (and should) specify title, author, and other meta info used with pandoc. You can also specify build commands used, when pandoc executes the command. You can see an example here:  
-
-~~~yaml
----
-title: Git To Book
-author: Dennis Iversen
-rights: Creative Commons Non-Commercial Share Alike 3.0
-language: en-US
-cover-image: images/cover.png
-
-# pandoc format arguments
-format-arguments:
-    pdf: -s -S   --latex-engine pdflatex --template=templates/default.latex --number-sections -V documentclass=memoir -V geometry:margin=1in -V lang=english --toc --chapters
-    html: -s -S --chapters --template=templates/bootstrap.html --css=css/bootstrap.css --number-sections --toc -t html5
-    epub: -s -S  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4 
-...
-~~~
-
-
+In the mata.yaml you can (and should) specify title, author, and other meta info used with pandoc. You can also specify build commands used, when pandoc executes the command. You can see an example here: <https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml>. You will see that the `format-arguments` are specific to gittobook, else it is a standard pandoc meata file. The `format-arguments` are the command line options given to pandoc. 
 
 ## Install local
 
