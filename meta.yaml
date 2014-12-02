@@ -7,8 +7,9 @@ cover-image: images/cover.png
 
 # pandoc format arguments
 format-arguments:
-    pdf: -s -S --latex-engine pdflatex --template=templates/default.latex --number-sections --toc --chapters
+    pdf: -s -S  --template=templates/default.latex --number-sections --toc --chapters -V geometry:margin=1in
     html: -s -S --chapters --template=templates/bootstrap.html --css=css/bootstrap.css --number-sections --toc -t html5
     epub: -s -S  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4 
-    # extra: pdf: -V documentclass=memoir -V geometry:margin=1in -V lang=danish
+    # extra: pdf: -V documentclass=memoir  -V lang=danish
+    # extra: pdf: --latex-engine pdflatex
 ...
