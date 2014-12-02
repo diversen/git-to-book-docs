@@ -4,11 +4,11 @@
 
 When you add a new git URL to the system, gittobook will checkout the repo, and look for any markdown files (`.md`). It will always checkout the master branch. Note: `README.md` will be ignored. The markdown files found are collected into one document, which is then transformed using pandoc. The gittobook will prepend a `meta.yaml` file if one is found (for adding meta data to the document - such as author, title, cover-image, etc). You can browse this documentation on <https://github.com/diversen/git-to-book-docs>, which is the repo used to generate the gittobook docs, and suggest edits. If you work on a larger book you can just add some directories to keep you content in. The file structure is parsed so that any directories are first examined for markdown or `.md` files. This resembles the way <http://github.com> displays files, when looking at a repo online.  
 
-## meta.yaml
+# meta.yaml
 
 In the mata.yaml you can (and should) specify title, author, and other meta info used with pandoc. You can also specify build commands used, when pandoc executes the command. You can see an example here: <https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml>. You will see that the `format-arguments` are specific to gittobook, else it is a standard pandoc meata file. The `format-arguments` are the command line options given to pandoc. 
 
-## Install local
+# Install local
 
 Requirements: 
 
@@ -47,7 +47,7 @@ Add a user:
 
      ./coscli.sh useradd --add
 
-## Pandoc Markdown
+# Pandoc Markdown
 
 Here is a document showing the pandoc markdown.  
 
