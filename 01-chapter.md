@@ -8,7 +8,7 @@ When you add a new git URL to the system, gittobook will checkout the repo, and 
 
 In the mata.yaml you can (and should) specify title, author, and other meta info used with pandoc. You can also specify build commands used when pandoc executes the command. You can see an example here:  
 
-~~~.yaml
+~~~yaml
 ---
 title: Git To Book
 author: Dennis Iversen
