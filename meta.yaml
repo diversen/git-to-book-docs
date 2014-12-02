@@ -6,8 +6,11 @@ language: en-US
 cover-image: images/cover.png
 
 # pandoc format arguments
+# other useful options could be: 
+# pdf: --chapters -V geometry:margin=1in -V documentclass=memoir -V lang=danish
 format-arguments:
-    pdf: -s -S --latex-engine pdflatex --template=templates/default.latex --number-sections --toc --chapters -V geometry:margin=1in -V documentclass=memoir  -V lang=danish
+    pdf: -s -S --latex-engine pdflatex --template=templates/default.latex --number-sections --toc  
     html: -s -S --chapters --template=templates/bootstrap.html --css=css/bootstrap.css --number-sections --toc -t html5
     epub: -s -S  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4 
+
 ...
