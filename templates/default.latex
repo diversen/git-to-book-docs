@@ -156,7 +156,7 @@ $endif$
         A. Uthor\\
     }    
     \vfill
-    \includegraphics[width=4cm]{images/cover.png} % also works with logo.pdf
+    \includegraphics[width=4cm]{cover.png} % also works with logo.pdf
     \vfill
     \vfill
 \end{titlepage}
