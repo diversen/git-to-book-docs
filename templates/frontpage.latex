@@ -1,4 +1,5 @@
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+\usepackage{graphicx} 
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
@@ -129,6 +130,7 @@ $if(lang)$
   \usepackage[$lang$]{babel}
 \fi
 $endif$
+
 $for(header-includes)$
 $header-includes$
 $endfor$
@@ -143,6 +145,26 @@ $endif$
 \date{$date$}
 
 \begin{document}
+
+% change
+\begin{titlepage}
+    \centering
+    \vfill
+    {\bfseries\Large
+        Performance Report\\
+        First Quarter 2011\\
+        \vskip2cm
+        A. Uthor\\
+    }    
+    \vfill
+    \includegraphics[width=4cm]{images/test.jpg} % also works with logo.pdf
+    \vfill
+    \vfill
+\end{titlepage}
+
+% end change
+
+
 $if(title)$
 \maketitle
 $endif$
