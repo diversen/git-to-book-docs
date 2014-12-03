@@ -51,7 +51,7 @@ Add a user:
 
 If you make the above install, then the system is multi user by default. But you can make a few configuration changes in order to change this. This shows the default `gitbook.ini` file which is located in `modules/gitbook`
 
-~~~.ini
+~~~ini
 ; who can use it
 ; user is a user which has signed up
 gitbook_allow = 'user'
