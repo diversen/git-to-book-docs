@@ -6,6 +6,7 @@ language: en-US
 cover-image: images/cover.png
 
 # pandoc format arguments
+# because of security these options are not parsed in the online version
 # other useful options could be: 
 # pdf: --chapters -V geometry:margin=1in -V documentclass=memoir -V lang=danish
 format-arguments:
@@ -14,6 +15,8 @@ format-arguments:
     epub: -s -S  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4 
 # ignore the following files
 # ignore-files: 
-#    - README.md 
-    
+#    - README.md
+
+# 
+docs-folder: docs/
 ...
