@@ -55,9 +55,11 @@ If you make the above install, then the system is multi user by default. But you
 
 ~~~ini
 ; who can use it
-; user is a user which has signed up - admin is created in the install proces
+; user is a user which has signed up - 
+; admin is created in the install proces
 gitbook_allow = 'user'
-; allow these formats to be created by the user
+; allow these formats to be created by a 'user'
+; admin has rights to what he wants
 gitbook_exports = 'epub,html,pdf'
 ; who is allowed to use the all options in meta.yaml
 ; the all option means access to using templates
