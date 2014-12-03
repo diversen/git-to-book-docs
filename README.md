@@ -59,12 +59,14 @@ If you make the above install, then the system is multi user by default. But you
 ; admin is created in the install proces
 gitbook_allow = 'user'
 ; allow these formats to be created by a 'user'
-; admin has rights to what he wants
+; admin has rights to do what he wants
 gitbook_exports = 'epub,html,pdf'
 ; who is allowed to use the all options in meta.yaml
 ; the all option means access to using templates
 ; be careful about this!  
 gitbook_meta_allow = 'admin'
+; assets allowed for user
+gitbook_allow_assets = 'css,jpeg,jpg,png,gif'
 ~~~
 
 As you see in the above `gitbook` config file.
