@@ -49,17 +49,14 @@ Add a user:
 
 # Resources
 
-Here is a document showing the pandoc markdown.  
+The pandoc markdown.  
 
 <http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html>
 
-pandoc -S -o book.epub title.txt test.md
-
-Math LaTex
+Math LaTex:
 
 <http://en.wikibooks.org/wiki/LaTeX/Mathematics>
 
-Some Pandoc templates
+Some Pandoc templates:
 
-https://github.com/jgm/pandoc/wiki/User-contributed-templates
-
+<https://github.com/jgm/pandoc/wiki/User-contributed-templates>
