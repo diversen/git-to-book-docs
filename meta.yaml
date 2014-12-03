@@ -13,7 +13,7 @@ format-arguments:
     html: -s -S --chapters --template=templates/bootstrap.html --css=css/bootstrap.css --number-sections --toc -t html5
     epub: -s -S  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4 
 # ignore the following files
-ignore-files: 
-    - README.md 
+#ignore-files: 
+#    - README.md 
     
 ...
