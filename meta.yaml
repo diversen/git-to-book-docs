@@ -15,7 +15,8 @@ cover-image: images/cover.png
 format-arguments:
     pdf: -s -S --latex-engine=pdflatex --template=templates/default.latex --number-sections --toc
     html: -s -S --chapters --number-sections --toc -t html5
-    epub: -s -S  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4 
+    epub: -s -S  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4
+    docbook: -s -S -t docbook
 # ignore the following files
 # ignore-files: 
 #    - README.md
