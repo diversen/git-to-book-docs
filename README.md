@@ -90,3 +90,7 @@ Math LaTex:
 Some Pandoc templates:
 
 <https://github.com/jgm/pandoc/wiki/User-contributed-templates>
+
+<iframe src="http://embed.ted.com/talks/lang/zh-tw/ken_robinson_how_to_escape_education_s_death_valley.html"
+width="560" height="315" frameborder="0" scrolling="no" 
+webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
