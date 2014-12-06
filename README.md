@@ -12,13 +12,15 @@ The gittobook will prepend a `meta.yaml` file if one is found (for adding meta d
 
 ## Install local
 
-Requirements: 
+### Requirements: 
 
 * Apache2
 * php5 >= 5.3
 * mysql-server
 * pandoc
 * texlive-full
+
+### Build
 
 First clone the base system into e.g. yoursite: 
 
@@ -37,7 +39,7 @@ Run install command:
 
     ./coscli.sh prompt-install --install
 
-Ready to install. Select gittobook profile when asked. You will be asked about DB configuration,  and version to install. Use the `latest version` version or try `master` (tagged versions are tested and should work, while master will work 99% of the time work as well). After writing the `config/config.ini` file the system will install all the gittobooks profile modules from git repos. At last system will prompt you for a super user. 
+Ready to install. Select gittobook profile when asked. You will be asked about DB configuration,  and version to install. Use the `latest version` version or try `master` (tagged versions are tested and should work, while master will work 99% of the time work as well). After writing the `config/config.ini` file the system will install all the gittobooks profile modules from git repos. At last system will prompt you for a super user. You don't need a real email - you can just use test / test: 
 
 Set correct perms for public files after install (e.g. upload folder)
 
@@ -45,11 +47,7 @@ Set correct perms for public files after install (e.g. upload folder)
     // the perms to be www-data
     sudo ./coscli.sh file --chmod-files
 
-Add a user (will prompt you for an email and a password) - you can just use test / test: 
-
-     ./coscli.sh useradd --add
-
-## System config
+### System config
 
 If you make the above install, then the system is multi user by default. But you can make a few configuration changes in order to change this. This shows the default `gitbook.ini` file which is located in `modules/gitbook`.
 
@@ -84,5 +82,3 @@ Math LaTex:
 Some Pandoc templates:
 
 <https://github.com/jgm/pandoc/wiki/User-contributed-templates>
-
-Test
