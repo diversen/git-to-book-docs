@@ -4,15 +4,15 @@
 
 **Gittobook** (git-to-book) is an easy way to write to multiple formats using Markdown - e.g. to Epub, Mobi, or PDF, which are often formats used to create books - online or for print. So It is basically a bridge between **pandoc** ([http://pandoc.org](http://pandoc.org)) and **git**. Pandoc is used to generate the different formats, and git repos are used to store the written markdown files, and assets, such as pandoc templates and css and images. The aim is to simplify pandoc by using some easier default options when creating Epub, Mobi, and PDF files. And also enable people (or maybe only myself :) to use git when writing large text documents, which will be transformed into different formats.  
 
-There is a online demo version, which you can log in to (if you want to keep your content) - or just test it without logging in, by adding a repo (which will disappear in a day or so). This can be found on <http://gittobook.org>. The online version will export to Epub, Mobi, PDF and HTML, but with some restrictions in templates and options. 
+There is a online demo version, which you can log in to (if you want to keep your content) - or just test it without logging in, by adding a repo (which will disappear in a day or so). This can be found on [http://gittobook.org](http://gittobook.org). The online version will export to Epub, Mobi, PDF and HTML, but with some restrictions in templates and options. 
 
-When you add a new git URL to the system, gittobook will checkout the repo, and look for any markdown files (`.md`). It will always checkout the `default` branch - this is often `master`, but does not have to be master. The markdown files found are collected into one document, which is then transformed using pandoc. You can browse this documentation on <https://github.com/diversen/git-to-book-docs>, which is the repo used to generate the gittobook docs, and suggest edits. This document is just a simple `README.md`, which has been transformed by pandoc. 
+When you add a new git URL to the system, gittobook will checkout the repo, and look for any markdown files (`.md`). It will always checkout the `default` branch - this is often `master`, but does not have to be master. The markdown files found are collected into one document, which is then transformed using pandoc. You can browse this documentation on [https://github.com/diversen/git-to-book-docs](https://github.com/diversen/git-to-book-docs), which is the repo used to generate the gittobook docs, and suggest edits. This document is just a simple `README.md`, which has been transformed by pandoc. 
 
-If you work on a larger book you can just add some directories to keep you content better organised. The file structure is parsed so that any directories are first examined for markdown files, which should end on the `.md` extension. The way a directory is listed resembles the way <http://github.com> displays files, when looking at a repo online, which means directories are displayed first, and then files. In order to keep you files in the right order you can add e.g. `01-`, `02-` etc. in front of direcotires and documents, as this will give you the sorting you want. 
+If you work on a larger book you can just add some directories to keep you content better organised. The file structure is parsed so that any directories are first examined for markdown files, which should end on the `.md` extension. The way a directory is listed resembles the way [http://github.com](http://github.com) displays files, when looking at a repo online, which means directories are displayed first, and then files. In order to keep you files in the right order you can add e.g. `01-`, `02-` etc. in front of direcotires and documents, as this will give you the sorting you want. 
 
 ## Pandoc config / meta.yaml
 
-The gittobook will prepend a `meta.yaml` file if one is found (for adding meta data to the document - such as author, title, cover-image, build commands, etc). In the `meta.yaml` you can (and should) specify title, author, and other meta info used with pandoc. You can also specify build commands used, when pandoc executes the command. You can see an example here: <https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml>. You will see that the `format-arguments` are specific to gittobook, otherwise it is a standard pandoc `.yaml file`. The `format-arguments` are the command line options given to pandoc. You can also add files to `ignore-files`, e.g. `README.md`.
+The gittobook will prepend a `meta.yaml` file if one is found (for adding meta data to the document - such as author, title, cover-image, build commands, etc). In the `meta.yaml` you can (and should) specify title, author, and other meta info used with pandoc. You can also specify build commands used, when pandoc executes the command. You can see an example here: [https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml](https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml). You will see that the `format-arguments` are specific to gittobook, otherwise it is a standard pandoc `.yaml file`. The `format-arguments` are the command line options given to pandoc. You can also add files to `ignore-files`, e.g. `README.md`.
 
 ## Install local
 
@@ -81,17 +81,13 @@ As you see in the above `gitbook` config file.
 
 The pandoc markdown.  
 
-<http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html>
+[http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html](http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html)
 
 Math LaTex:
 
-<http://en.wikibooks.org/wiki/LaTeX/Mathematics>
+[http://en.wikibooks.org/wiki/LaTeX/Mathematics](http://en.wikibooks.org/wiki/LaTeX/Mathematics)
 
 Some Pandoc templates:
 
-<https://github.com/jgm/pandoc/wiki/User-contributed-templates>
-<h1>Endnu en test</h1>
+[https://github.com/jgm/pandoc/wiki/User-contributed-templates](https://github.com/jgm/pandoc/wiki/User-contributed-templates)
 
-<iframe src="http://embed.ted.com/talks/lang/zh-tw/ken_robinson_how_to_escape_education_s_death_valley.html"
-width="560" height="315" frameborder="0" scrolling="no" 
-webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
