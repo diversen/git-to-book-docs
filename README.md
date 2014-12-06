@@ -67,7 +67,8 @@ gitbook_allow = 'user'
 ; admin has rights to do what he wants
 gitbook_exports = 'epub,html,pdf'
 ; who is allowed to use the all options in meta.yaml
-; the all option means access to using templates
+; the 'user' option means everyone 
+; has access to use templates
 ; be careful about this!  
 gitbook_meta_allow = 'admin'
 ; assets allowed for user
