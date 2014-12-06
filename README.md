@@ -63,15 +63,12 @@ If you make the above install, then the system is multi user by default. But you
 ; user is a user which has signed up - 
 ; admin is created in the install proces
 gitbook_allow = 'user'
-; allow these formats to be created by a 'user'
-; admin has rights to do what he wants
-gitbook_exports = 'epub,html,pdf'
 ; who is allowed to use the all options in meta.yaml
-; the 'user' option means everyone 
-; has access to use templates
-; be careful about this!  
-gitbook_meta_allow = 'admin'
-; assets allowed for user
+; insert unescaped inline HTML for e.g. videos
+gitbook_allow_ext = 'admin'
+; for 'gitbook_allow' only these formats works
+gitbook_exports = 'epub,html,pdf'
+; assets allowed for 'gitbook_allow'
 gitbook_allow_assets = 'css,jpeg,jpg,png,gif'
 ~~~
 
