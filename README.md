@@ -72,8 +72,6 @@ gitbook_exports = 'epub,html,pdf'
 gitbook_allow_assets = 'css,jpeg,jpg,png,gif'
 ~~~
 
-As you see in the above `gitbook` config file.
-
 ## Useful Resources
 
 The pandoc markdown.  
