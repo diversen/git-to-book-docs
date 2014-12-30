@@ -14,7 +14,7 @@ cover-image: images/cover.png
 # --from markdown_strict 
 # pdf: --chapters -V geometry:margin=1in -V documentclass=memoir -V lang=danish
 format-arguments:
-    pdf: -s -S --latex-engine=pdflatex --template=templates/default.latex --toc --number-sections -V documentclass=memoir -V mainfont=Georgia -V lang=danish
+    pdf: -s -S --latex-engine=pdflatex  --toc --number-sections -V lang=danish
     html: -s -S --toc-depth=3 --chapters --number-sections --toc -t html5
     epub: -s -S -V lang=test  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4
 
