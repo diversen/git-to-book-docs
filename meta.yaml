@@ -15,7 +15,7 @@ cover-image: images/cover.png
 # pdf: --chapters -V geometry:margin=1in -V documentclass=memoir -V lang=danish
 format-arguments:
     pdf: -s -S --latex-engine=pdflatex  --toc --number-sections -V lang=danish
-    html: -s -S --toc-depth=3 --chapters --number-sections --toc -t html5
+    html: -s -S --template=templates/bootstrap.html --toc-depth=3 --chapters --number-sections --toc -t html5
     epub: -s -S -V lang=test  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4
 
 # xml docbook
