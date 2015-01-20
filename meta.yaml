@@ -15,7 +15,7 @@ cover-image: images/cover.png
 # pdf: --chapters -V geometry:margin=1in -V documentclass=memoir -V lang=danish
 format-arguments:
     #pdf: -s -S --latex-engine=pdflatex  --toc --number-sections -V lang=danish
-    pdf: -N --template=templates/mytemplate.tex --variable mainfont=Georgia --variable sansfont=Arial --variable monofont="Bitstream Vera Sans Mono" --variable fontsize=12pt --variable version=1.10 --latex-engine=xelatex --toc
+    pdf: -N --template=templates/mytemplate.tex --variable mainfont=Georgia --variable sansfont=Arial --variable fontsize=12pt --variable version=1.10 --latex-engine=xelatex --toc
     html: -s -S --css=css/bootstrap.css --template=templates/bootstrap.html --toc-depth=3 --chapters --number-sections --toc -t html5
     epub: -s -S -V lang=test  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4
 
