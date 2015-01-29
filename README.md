@@ -93,8 +93,7 @@ Some Pandoc templates:
 
 renders: 
 
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall
-n\in\mathbb N$ is via through the Euler integral
+The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\foralln\in\mathbb N$ is via through the Euler integral
 
 and 
 
