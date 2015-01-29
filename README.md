@@ -86,3 +86,24 @@ Some Pandoc templates:
 
 [https://github.com/jgm/pandoc/wiki/User-contributed-templates](https://github.com/jgm/pandoc/wiki/User-contributed-templates)
 
+## Math
+
+    The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall
+    n\in\mathbb N$ is via through the Euler integral
+
+renders: 
+
+The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall
+n\in\mathbb N$ is via through the Euler integral
+
+and 
+
+    $$
+    \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+    $$
+
+renders: 
+$$
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+$$
+
