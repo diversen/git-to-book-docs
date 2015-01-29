@@ -102,7 +102,7 @@ $$
 
 ## Pandoc options
 
-The following pandoc options are allowed. If you build the software youself all options are allowed. 
+The following pandoc options are allowed in the online version. If you build the software youself all options are allowed. Note: These descriptions are taken from pandoc documentation. 
 
 Produce typographically correct output, converting straight quotes to curly quotes:
 
@@ -123,6 +123,7 @@ Include an automatically generated table of contents
     --toc
 
 Specify the number of section levels to include in the table of contents. The default is 3
+
     --toc-depth=[1-6]
 
 
@@ -164,7 +165,6 @@ Embed a epub font
     --epub-embed-font=[path/to/font]
 
 Pandoc variables. 
-E.g. -V lang=danish -V
  
     -V=variable 
 
@@ -174,3 +174,6 @@ Allowed subset of variables:
     documentclass
     lang
 
+Vairable example: 
+
+    -V sansfont=Arial -V monofont="Bitstream Vera Sans Mono" -V fontsize=12pt -V version=1.10
