@@ -128,7 +128,7 @@ Specify the number of section levels to include in the table of contents. The de
 
 Syntax highlight filter: Options are pygments (the default), kate, monochrome, espresso, zenburn, haddock, and tango.
 
-    --highlight-style'=[string]
+    --highlight-style=[string]
 
 Produce a standalone HTML file with no external dependencies, images and css will be embeded. 
 
@@ -147,8 +147,9 @@ Number section headings in LaTeX, ConTeXt, HTML, or EPUB output.
     --number-sections
 
 Link to a CSS style sheet
-    -c=[stylesheet]
-    --css=[stylesheet]
+
+    -c=[path/style.css]
+    --css=[path/to/style.css]
 
 Use the specified CSS file to style the EPUB
 
@@ -162,10 +163,13 @@ Embed a epub font
 
     --epub-embed-font=[path/to/font]
 
-Pandoc variables: 
+Pandoc variables. 
+E.g. -V lang=danish -V
+ 
     -V=variable 
 
-Allowed variables: 
+Allowed subset of variables: 
+
     geometry:margin
     documentclass
     lang
