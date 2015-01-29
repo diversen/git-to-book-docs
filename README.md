@@ -74,6 +74,10 @@ gitbook_allow_assets = 'css,jpeg,jpg,png,gif'
 
 ## Useful Resources
 
+Template variables 
+
+[http://johnmacfarlane.net/pandoc/README.html#templates](http://johnmacfarlane.net/pandoc/README.html#templates)
+
 The pandoc markdown.  
 
 [http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html](http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html)
@@ -81,12 +85,6 @@ The pandoc markdown.
 Math LaTex:
 
 [http://en.wikibooks.org/wiki/LaTeX/Mathematics](http://en.wikibooks.org/wiki/LaTeX/Mathematics)
-
-Some Pandoc templates:
-
-[https://github.com/jgm/pandoc/wiki/User-contributed-templates](https://github.com/jgm/pandoc/wiki/User-contributed-templates)
-
-## Math
 
 This: 
 
@@ -99,6 +97,11 @@ renders:
 $$
 \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
 $$
+
+
+Some other Pandoc templates:
+
+[https://github.com/jgm/pandoc/wiki/User-contributed-templates](https://github.com/jgm/pandoc/wiki/User-contributed-templates)
 
 ## Pandoc options
 
