@@ -17,7 +17,7 @@ date: 2015-01-27
 # pdf: --chapters -V geometry:margin=1in -V documentclass=memoir -V lang=danish
 format-arguments:
     pdf: -N --variable mainfont=Georgia --variable sansfont=Arial --variable fontsize=12pt --variable version=1.10 --latex-engine=xelatex --toc
-    html: -s -S --css=css/test.css --template=templates/default.html -toc-depth=3 --chapters --number-sections --toc -t html5
+    html: -s -S --css=css/test.css --template=templates/default.html -toc-depth=3 --chapters --number-sections --toc
     #html: -s -S --css=css/bootstrap.css --template=templates/bootstrap.html --toc-depth=3 --chapters --number-sections --toc -t html5
     #epub: -s -S -V lang=test  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4
     #texi: -s 
