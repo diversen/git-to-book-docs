@@ -18,6 +18,7 @@ format-arguments:
     pdf: -N --template=templates/mytemplate.tex --variable mainfont=Georgia --variable sansfont=Arial --variable fontsize=12pt --variable version=1.10 --latex-engine=xelatex --toc
     html: -s -S --css=css/bootstrap.css --template=templates/bootstrap.html --toc-depth=3 --chapters --number-sections --toc -t html5
     epub: -s -S -V lang=test  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4
+    texi: -s 
 # xml docbook
 # docbook: -s -S -t docbook
 # chunked xhtml (--skip validation(
