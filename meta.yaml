@@ -3,7 +3,7 @@ title: Git To Book Documentation (gittobook.org)
 Subtitle: A simple way to create PDF, EPUB, MOBI, HTML, etc from Markdown
 subject: Gittobook documentation
 author: Dennis Iversen
-description: A simple markdown converter using pandoc
+description: A simple git to book converter using pandoc and markdown
 keywords: ebooks, pandoc, pdf, html
 rights: Creative Commons Non-Commercial Share Alike 3.0
 language: en-US
