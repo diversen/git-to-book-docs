@@ -97,9 +97,8 @@ a {
 a:hover {
     color: #666666;
 }
-h3, h1 {
-    display: inline;
-    font-size: 150%;
+h3, h1, h2 {
+    font-size: 135%;
     font-weight: bolder;
     line-height: 1;
 }
@@ -178,7 +177,7 @@ img {
     padding: 0 5px 5px;
 }
 #header {
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: bold;
     margin-left: 0;
     padding-top: 30px;
@@ -347,7 +346,7 @@ iframe {
     width: 90%;
 }
 #content {
-    font-size: 1.6em;
+    font-size: 1.2em;
     margin-left: 2px;
     width: 95%;
 }
