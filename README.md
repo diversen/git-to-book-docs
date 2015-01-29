@@ -88,20 +88,14 @@ Some Pandoc templates:
 
 ## Math
 
-    The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall
-    n\in\mathbb N$ is via through the Euler integral
-
-renders: 
-
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\foralln\in\mathbb N$ is via through the Euler integral
-
-and 
+This: 
 
     $$
     \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
     $$
 
-renders: 
+renders:
+ 
 $$
 \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
 $$
