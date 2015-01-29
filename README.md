@@ -100,3 +100,73 @@ $$
 \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
 $$
 
+## Pandoc options
+
+The following pandoc options are allowed. If you build the software youself all options are allowed. 
+
+Produce typographically correct output, converting straight quotes to curly quotes:
+
+    -S
+    --smart
+
+Specify the base level for headers (defaults to 1)
+
+    --base-header-level=[1-6]
+
+Produce output with an appropriate header and footer 
+
+    -s
+    --standalone
+
+Include an automatically generated table of contents
+
+    --toc
+
+Specify the number of section levels to include in the table of contents. The default is 3
+    --toc-depth=[1-6]
+
+
+Syntax highlight filter: Options are pygments (the default), kate, monochrome, espresso, zenburn, haddock, and tango.
+
+    --highlight-style'=[string]
+
+Produce a standalone HTML file with no external dependencies, images and css will be embeded. 
+
+    --self-contained
+
+Produce HTML5 instead of HTML4. 
+
+    --html5
+
+Treat top-level headers as chapters in LaTeX, ConTeXt, and DocBook output.
+
+    --chapters
+
+Number section headings in LaTeX, ConTeXt, HTML, or EPUB output.
+
+    --number-sections
+
+Link to a CSS style sheet
+    -c=[stylesheet]
+    --css=[stylesheet]
+
+Use the specified CSS file to style the EPUB
+
+    --epub-stylesheet
+
+Headers level in epub files. 
+
+    --epub-chapter-level=[1-6]
+
+Embed a epub font
+
+    --epub-embed-font=[path/to/font]
+
+Pandoc variables: 
+    -V=variable 
+
+Allowed variables: 
+    geometry:margin
+    documentclass
+    lang
+
