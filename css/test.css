@@ -1,6 +1,4 @@
 
-/* Caching /home/dennis/www/gitbook/htdocs/templates/zimpleza/default/default.css*/
-
 .loader {
     background-image: url("/images/load.gif");
     clear: right;
@@ -23,9 +21,9 @@ article {
     font-weight: bold;
 }
 .pager_wrap {
+    height: 40px;
     position: relative;
     width: 100%;
-    height: 40px;
 }
 .pager {
     display: inline-flex;
@@ -103,7 +101,7 @@ h3, h1 {
     display: inline;
     font-size: 150%;
     font-weight: bolder;
-    line-height: 1.2;
+    line-height: 1;
 }
 .headline {
 }
@@ -167,32 +165,28 @@ img {
     min-height: 1000px;
     padding: 10px;
     text-align: left;
-    width: 90%;
 }
 #content {
     font-size: 1.2em;
-    margin-left: 290px;
+    margin-left: 15%;
     margin-top: 0;
     top: 135px;
-    width: 61%;
+    width: 75%;
 }
 #content_module {
-    background-color: #ffffff;
-    border: 1px solid #cacaca;
+    background-color: #fff;
     padding: 0 5px 5px;
 }
 #header {
     font-size: 1.4em;
     font-weight: bold;
-    margin-left: 290px;
+    margin-left: 0;
     padding-top: 30px;
     text-align: left;
     text-decoration: none;
-    text-transform: uppercase;
 }
 #header a {
     border-bottom: medium none;
-    /* font-size: 400%; */
     padding-top: 40px;
 }
 .block {
@@ -275,12 +269,6 @@ html {
     font-size: 0.9em;
     padding: 0.5em;
 }
-
-
-
-
-/* Caching /home/dennis/www/gitbook/htdocs/templates/zimpleza/devices.css*/
-
 fieldset {
     display: table-column;
     max-width: none;
@@ -296,203 +284,158 @@ textarea, input {
 #logo_title a {
     border: 0 none;
 }
-
 img {
-        height: auto;
-        max-width: 100%;
-    }
-
+    height: auto;
+    max-width: 100%;
+}
 @media (min-width: 769px) and (max-width: 1024px) {
-
-
-    .ui-dialog {
-        max-width: 70%;
-    }
-    #page {
-        width: 98%;
-    }
-    #content {
-        font-size: 1.3em;
-        width: 60%;        
-    }
-
-    #logo_title a {
-        font-size: 1.2em;
-    }
+.ui-dialog {
+    max-width: 70%;
+}
+#page {
+    width: 98%;
+}
+#content {
+    font-size: 1.3em;
+    width: 80%;
+}
+#logo_title a {
+    font-size: 1.2em;
+}
 }
 @media (min-width: 481px) and (max-width: 768px) {
-    #sidebar_left {
-        display: none;
-    }
-    .ui-dialog {
-        max-width: 70%;
-    }
-    #page {
-        width: 98%;
-    }
-    #content {
-        font-size: 1.3em;
-        margin-left: 2px;
-        width: 98%;
-    }
-    #header {
-        margin-left: 2px;
-    }
-    
-    #header a {
-        font-size: 200%;
-    }
-    #logo_title a {
-        font-size: 1.2em;
-    }
-    img {
-        height: auto;
-        max-width: 100%;
-    }
-    iframe {
-        width: 98%;
-
-    }
-    #main_menu a {
-        font-size: 150%;
-    }
+#sidebar_left {
+    display: none;
+}
+.ui-dialog {
+    max-width: 70%;
+}
+#page {
+    width: 98%;
+}
+#content {
+    font-size: 1.3em;
+    margin-left: 2px;
+    width: 98%;
+}
+#header {
+    margin-left: 2px;
+}
+#header a {
+    font-size: 200%;
+}
+#logo_title a {
+    font-size: 1.2em;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+iframe {
+    width: 98%;
+}
+#main_menu a {
+    font-size: 150%;
+}
 }
 @media (min-width: 0px) and (max-width: 480px) {
-    #sidebar_left {
-        display: none;
-    }
-    #page {
-        padding-left: 5%;
-        width: 90%;
-    }
-    #content {
-        font-size: 1.6em;
-        margin-left: 2px;
-        width: 95%;
-    }
-    
-    #header {
-        margin-left: 2px;
-    }
-    
-    #header a {
-        font-size: 200%;
-    }
-    
-    #logo_title a {
-        font-size: 0.8em;
-    }
-    img {
-        max-width: 100%;
-    }
-    iframe {
-        height: auto;
-        max-width: 100%;
-    }
-    #main_menu a {
-        font-size: 120%;
-    }
+#sidebar_left {
+    display: none;
 }
-
-
-
-
-/* Caching /home/dennis/www/gitbook/htdocs/files/default/cached_assets/719cbfb8a4588602d63856c6f48e2c23.css*/
-#system_admin_menu { 
+#page {
+    padding-left: 5%;
+    width: 90%;
+}
+#content {
+    font-size: 1.6em;
+    margin-left: 2px;
+    width: 95%;
+}
+#header {
+    margin-left: 2px;
+}
+#header a {
+    font-size: 200%;
+}
+#logo_title a {
+    font-size: 0.8em;
+}
+img {
+    max-width: 100%;
+}
+iframe {
+    height: auto;
+    max-width: 100%;
+}
+#main_menu a {
+    font-size: 120%;
+}
+}
+#system_admin_menu {
+    height: 0;
     position: absolute;
-    height: 0px; 
-    top:0px;
+    top: 0;
     width: 400px;
-} 
-
-
-/* 
- * LEVEL ONE
-*/
-ul.system_admin_menu_dropdown { 
-    position: absolute; 
-    z-index: 1; 
-    list-style: none outside none;
-    padding: 0 0 0 0;
-
 }
-
-ul.system_admin_menu_dropdown li {  
-    font-weight: bold; 
+ul.system_admin_menu_dropdown {
+    list-style: outside none none;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+}
+ul.system_admin_menu_dropdown li {
+    background: none repeat scroll 0 0 #ccc;
+    float: left;
+    font-weight: bold;
     padding: 4px 8px;
-    float: left;  
-    background: #ccc;
 }
-
-ul.system_admin_menu_dropdown a:hover { 
-    color: #000; 
+ul.system_admin_menu_dropdown a:hover {
+    color: #000;
 }
-
-ul.system_admin_menu_dropdown a:active { 
+ul.system_admin_menu_dropdown a:active {
     color: #ffa500;
 }
-
-ul.system_admin_menu_dropdown li a { 
-    display: block; 
-    padding: 4px 8px; 
+ul.system_admin_menu_dropdown li a {
     border-right: 1px solid #333;
     color: #222;
+    display: block;
+    padding: 4px 8px;
 }
-
-ul.system_admin_menu_dropdown li:last-child a { 
-    border-right: none; 
-} /* Doesn't work in IE */
-
-ul.system_admin_menu_dropdown li.hover, ul.system_admin_menu_dropdown li:hover { 
-    background: #fff; 
-    color: black; 
-    position: relative; 
+ul.system_admin_menu_dropdown li:last-child a {
+    border-right: medium none;
 }
-
-ul.system_admin_menu_dropdown li.hover a { 
+ul.system_admin_menu_dropdown li.hover, ul.system_admin_menu_dropdown li:hover {
+    background: none repeat scroll 0 0 #fff;
+    color: black;
+    position: relative;
+}
+ul.system_admin_menu_dropdown li.hover a {
     color: black;
 }
-
-
-/* 
-    LEVEL TWO
-*/
-ul.system_admin_menu_dropdown ul { 
-    list-style: none; 
-    width: 220px; 
-    visibility: hidden; 
-    position: absolute; 
-    top: 100%; 
-    left: -40px; 
+ul.system_admin_menu_dropdown ul {
+    left: -40px;
+    list-style: outside none none;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    width: 220px;
 }
-
-ul.system_admin_menu_dropdown ul li { 
-    font-weight: normal; 
-    background: #f6f6f6; 
-
-    border-bottom: 1px solid #ccc; 
-    float: none; 
+ul.system_admin_menu_dropdown ul li {
+    background: none repeat scroll 0 0 #f6f6f6;
+    border-bottom: 1px solid #ccc;
+    float: none;
+    font-weight: normal;
 }
-                                      
-/* IE 6 & 7 Needs Inline Block */
-ul.system_admin_menu_dropdown ul li a { 
-    border-right: none; 
-    width: 100%; 
-    display: inline-block; 
-} 
-
-/* 
-    LEVEL THREE
-*/
-ul.system_admin_menu_dropdown ul ul { 
-    left: 100%; 
+ul.system_admin_menu_dropdown ul li a {
+    border-right: medium none;
+    display: inline-block;
+    width: 100%;
+}
+ul.system_admin_menu_dropdown ul ul {
+    left: 100%;
     top: 0;
 }
-
-ul.system_admin_menu_dropdown li:hover > ul { 
-    visibility: visible; 
+ul.system_admin_menu_dropdown li:hover > ul {
+    visibility: visible;
 }
-
-
-
 
