@@ -145,6 +145,7 @@ Treat top-level headers as chapters in LaTeX, ConTeXt, and DocBook output.
 
 Number section headings in LaTeX, ConTeXt, HTML, or EPUB output.
 
+    -N
     --number-sections
 
 Link to a CSS style sheet
