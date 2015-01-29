@@ -16,7 +16,7 @@ date: 2015-01-27
 # --from markdown_strict 
 # pdf: --chapters -V geometry:margin=1in -V documentclass=memoir -V lang=danish
 format-arguments:
-    pdf: -V mainfont='Comic Sans MS' -V sansfont='Times New Roman' -V monofont=Arial -V fontsize=12pt -V version=1.10 --toc
+    pdf: -V mainfont='Comic Sans MS' -V boldfont='Latin Modern Roman' -V sansfont='Times New Roman' -V monofont=Arial -V fontsize=12pt -V version=1.10 --toc
     html: -s -S --css=css/default.css --template=templates/default.html --toc-depth=3 --chapters --number-sections --toc
     #html: -s -S --css=css/bootstrap.css --template=templates/bootstrap.html --toc-depth=3 --chapters --number-sections --toc -t html5
     #epub: -s -S -V lang=test  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4
