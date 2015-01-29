@@ -176,4 +176,4 @@ Allowed subset of variables:
 
 Vairable example: 
 
-    -V sansfont=Arial -V monofont="Bitstream Vera Sans Mono" -V fontsize=12pt -V version=1.10
+    -V sansfont=Arial -V fontsize=12pt -V version=1.10
