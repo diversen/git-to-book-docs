@@ -2,8 +2,6 @@
 
 ## Quickstart
 
-# h1 test
-
 **Gittobook** (git-to-book) is an easy way to write to multiple formats using Markdown - e.g. to Epub, Mobi, or PDF, which are often formats used to create books - online or for print. So It is basically a bridge between **pandoc** ([http://pandoc.org](http://pandoc.org)) and **git**. Pandoc is used to generate the different formats, and git repos are used to store the written markdown files, and assets, such as pandoc templates and css and images. The aim is to simplify pandoc by using some easier default options when creating Epub, Mobi, and PDF files. And also enable people (or maybe only myself :) to use git when writing large text documents, which will be transformed into different formats.  
 
 There is a online demo version, which you can log in to (if you want to keep your content) - or just test it without logging in, by adding a repo (which will disappear in a day or so). This can be found on [http://gittobook.org](http://gittobook.org). The online version will export to Epub, Mobi, PDF and HTML, but with some restrictions in templates and options. 
