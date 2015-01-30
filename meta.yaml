@@ -8,6 +8,7 @@ keywords: ebooks, pandoc, pdf, html
 rights: Creative Commons Non-Commercial Share Alike 3.0
 language: en-US
 cover-image: images/cover.png
+lang: en
 date: 2015-01-27
 
 # pandoc format arguments
