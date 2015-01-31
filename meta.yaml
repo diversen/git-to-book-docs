@@ -19,9 +19,9 @@ date: 2015-01-27
 format-arguments:
     #pdf: --number-sections -V mainfont='TeX Gyre Bonum' -V sansfont='Times New Roman' -V monofont=Arial -V fontsize=12pt -V version=1.10 --toc
     #pdf: -V mainfont='Latin Modern Roman' -V sansfont='Times New Roman' -V monofont=Arial -V fontsize=12pt -V version=1.10 --toc
-    html: -s -S --css=css/default.css --template=templates/default.html --toc-depth=3 --chapters --number-sections --toc
+    html: -S --css=css/default.css --template=templates/default.html --toc-depth=3 --chapters --number-sections --toc
     #html: -s -S --css=css/bootstrap.css --template=templates/bootstrap.html --toc-depth=3 --chapters --number-sections --toc -t html5
-    epub: -s -S -V lang=test  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4
+    epub: -S -V lang=test  --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4
     #texi: -s 
     mobi:
 # xml docbook
