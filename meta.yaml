@@ -28,7 +28,7 @@ format-arguments:
     #texi: -s 
     mobi: ok
 # xml docbook
-# docbook: -s -S -t docbook
+    docbook: -s -S -t docbook
 # chunked xhtml (--skip validation(
 # xmlto xhtml -m templates/docbook.xsl --skip git-to-book-docs.db -o test/
 # ignore the following files
