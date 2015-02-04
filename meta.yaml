@@ -2,6 +2,7 @@
 title: Git To Book Documentation
 Subtitle: A simple way to generate PDF, EPUB, MOBI, HTML, etc from Markdown and Pandoc
 subject: Gittobook documentation
+test: test
 author:
 - Dennis Iversen
 - Another author
