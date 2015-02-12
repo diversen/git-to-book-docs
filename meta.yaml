@@ -23,7 +23,7 @@ format-arguments:
     #pdf: --number-sections -V mainfont='TeX Gyre Bonum' -V sansfont='Times New Roman' -V monofont=Arial -V fontsize=12pt -V version=1.10 --toc
     pdf: -V mainfont='Latin Modern Roman' -V sansfont='Times New Roman' -V monofont=Arial -V fontsize=12pt -V version=1.10 --toc
     #html: -S --css=css/default.css --template=templates/default.html --toc-depth=3 --chapters --number-sections --toc
-    html: -S --template=templates/test.html --toc-depth=3 --chapters --toc
+    html: -S --template=templates/test.html --toc-depth=2 --chapters --toc
     #html: -s -S --css=css/bootstrap.css --template=templates/bootstrap.html --toc-depth=3 --chapters --number-sections --toc -t html5
     epub: -S --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4
     #texi: -s 
