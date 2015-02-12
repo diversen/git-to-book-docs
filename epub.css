@@ -1,0 +1,29 @@
+@font-face {
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+src:url("fonts/OpenSans-Regular.ttf");
+}
+/*
+@font-face {
+font-family: DejaVuSans;
+font-style: normal;
+font-weight: bold;
+src:url("DejaVuSans-Bold.ttf");
+}
+@font-face {
+font-family: DejaVuSans;
+font-style: italic;
+font-weight: normal;
+src:url("DejaVuSans-Oblique.ttf");
+}
+@font-face {
+font-family: DejaVuSans;
+font-style: italic;
+font-weight: bold;
+src:url("DejaVuSans-BoldOblique.ttf");
+}*/
+body { font-family: "OpenSans"; }
+
+
+
