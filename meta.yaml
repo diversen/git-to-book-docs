@@ -24,7 +24,7 @@ format-arguments:
     html: -S --template=templates/default.html --toc-depth=3 --chapters --number-sections --toc
     #html: -S --toc-depth=3 --chapters --number-sections --toc --css=css/bootstrap.css
     #html: -s -S --css=css/bootstrap.css --template=templates/bootstrap.html --toc-depth=3 --chapters --number-sections --toc -t html5
-    epub: -S --epub-embed-font=fonts/OpenSans-Regular.ttf --epub-stylesheet=epub.css --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4
+    epub: -S --epub-embed-font=OpenSans-Regular.ttf --epub-stylesheet=epub.css --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4
     #texi: -s 
     mobi: ok
 # xml docbook
