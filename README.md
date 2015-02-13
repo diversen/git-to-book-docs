@@ -198,5 +198,8 @@ In order to use e.g. chinese you will se that a chinese font exists:   `WenQuanY
 In your meta tag you should add something like the following. 
 
     format-arguments:
-        pdf: -V mainfont='WenQuanYi Micro Hei Mono' -V sansfont='WenQuanYi Micro Hei Mono' -V monofont='WenQuanYi Micro Hei Mono'
+        pdf: > 
+            -V mainfont='WenQuanYi Micro Hei Mono' 
+            -V sansfont='WenQuanYi Micro Hei Mono' 
+            -V monofont='WenQuanYi Micro Hei Mono'
 
