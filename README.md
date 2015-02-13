@@ -181,3 +181,22 @@ Allowed subset of variables:
 Vairable example: 
 
     -V sansfont=Arial -V fontsize=12pt -V version=1.10
+
+## Fonts
+
+When using pandoc for transformation of e.g. chinese you will need to change your font in order to get a readable result. Here are a list of fonts on the server. If you install local you will usually be able to get a font list with the command `fc-list`. 
+
+This is the fonts on the server: 
+
+<https://github.com/diversen/git-to-book-docs/blob/master/font-list>
+
+In order to use e.g. chinese you will se that a chinese font exists:   `WenQuanYi Micro Hei` is the font name: 
+
+
+/usr/share/fonts/truetype/wqy/wqy-microhei.ttc: WenQuanYi Micro Hei Mono,文泉驛等寬微米黑,文泉驿等宽微米黑:style=Regular
+
+In your meta tag you should add something like the following. 
+
+    format-arguments:
+        pdf: -V mainfont='WenQuanYi Micro Hei Mono' -V sansfont='WenQuanYi Micro Hei Mono' -V monofont='WenQuanYi Micro Hei Mono'
+
