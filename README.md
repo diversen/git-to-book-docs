@@ -190,9 +190,7 @@ This is the fonts on the server:
 
 <https://github.com/diversen/git-to-book-docs/blob/master/font-list>
 
-In order to use e.g. chinese you will se that a chinese font exists:   `WenQuanYi Micro Hei` is the font name. Found on this line. 
-
-`/usr/share/fonts/truetype/wqy/wqy-microhei.ttc: WenQuanYi Micro Hei Mono,文泉驛等寬微米黑,文泉驿等宽微米黑:style=Regular`
+In order to use e.g. chinese you will se that a chinese font exists:   `WenQuanYi Micro Hei Mono` is the font name. Found on line 529. 
 
 In your meta tag you should add something like the following. 
 
