@@ -29,7 +29,7 @@ The gittobook will prepend a `meta.yaml` file if one is found (for adding meta d
 
 First clone the base system into e.g. yoursite: 
 
-    git clone git://github.com/diversen/coscms.git yoursite
+    git clone git://github.com/diversen/coscms.git example.com
 
 Enter the base system: 
 
@@ -38,13 +38,18 @@ Enter the base system:
 Enable apache2 host:
 
     // you will need to be root
-    sudo ./coscli.sh apache2 --en yoursite
+    sudo ./coscli.sh apache2 --en example.com
+
+Clone install profile git-to-book-profile
+
+    cd profiles 
+    git clone https://github.com/diversen/git-to-book-profile
 
 Run install command: 
 
     ./coscli.sh prompt-install --install
 
-Ready to install. Select gittobook profile when asked. You will be asked about DB configuration,  and version to install. Use the `latest version` version or try `master` (tagged versions are tested and should work, while master will work 99% of the time work as well). After writing the `config/config.ini` file the system will install all the gittobooks profile modules from git repos. At last system will prompt you for a super user. You don't need a real email - you can just use test / test: 
+Ready to install. Select `git-to-book-profile` profile when asked. You will be asked about DB configuration,  and version to install. Use the  `master`. After writing the `config/config.ini` file the system will install all the profile modules from git repos. At last the system will prompt you for a super user. Enter an email and password
 
 Set correct perms for public files after install (e.g. upload folder)
 
@@ -52,7 +57,12 @@ Set correct perms for public files after install (e.g. upload folder)
     // the perms to be www-data
     sudo ./coscli.sh file --chmod-files
 
-Go to http://yoursite
+We use a extra public directory, which you will need to add manual:
+
+    mkdir htdocs/books
+    sudo chown www-data:www-data htdocs/books
+
+Go to http://example.com and log in and add a repo. 
 
 ### System config
 
