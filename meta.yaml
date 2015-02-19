@@ -2,13 +2,12 @@
 title: 'Git to book documentation'
 Subtitle: A simple way to generate PDF, EPUB, MOBI, HTML, using Markdown and git repositories. Output formats are generated using Pandoc.
 subject: Gittobook documentation
-test: test
 author:
 - Dennis Bæk Iversen
 keywords: ebooks, pandoc, pdf, html
 rights: Creative Commons Non-Commercial Share Alike 3.0
 language: en-US
-tags: [pandoc, pdf, epub]
+tags: [pandoc, pdf, epub, mobi creation]
 cover-image: "images/cover.png"
 lang: en
 # Note you will need quotes around dates
@@ -20,28 +19,12 @@ date: '2015-01-27'
 # --from markdown_strict 
 # pdf: --chapters -V geometry:margin=1in -V documentclass=memoir -V lang=danish
 format-arguments:
-    #pdf: --number-sections -V mainfont='TeX Gyre Bonum' -V sansfont='Times New Roman' -V monofont=Arial -V fontsize=12pt -V version=1.10 --toc
     pdf: >
         --number-sections
-        --chapters 
         -V mainfont='Latin Modern Roman' 
         -V sansfont='Times New Roman' 
         -V monofont=Arial -V fontsize=12pt -V version=1.10 --toc
-    html: -S --template=templates/default.html --toc-depth=3 --chapters --number-sections --toc
-    #html: -S --toc-depth=3 --chapters --number-sections --toc --css=css/bootstrap.css
-    #html: -s -S --css=css/bootstrap.css --template=templates/bootstrap.html --toc-depth=3 --chapters --number-sections --toc -t html5
+    html: -S --toc-depth=3 --chapters --number-sections --toc
     epub: -S --epub-embed-font=OpenSans-Regular.ttf --epub-stylesheet=epub.css --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4
-    #texi: -s 
     mobi: ok
-# xml docbook
-    docbook: -s -S 
-# chunked xhtml (--skip validation(
-# xmlto xhtml -m templates/docbook.xsl --skip git-to-book-docs.db -o test/
-# ignore the following files
-#ignore-files: 
-#    - README.md
-
-# 
-# docs-folder: docs/
-# fonts: Comic Sans MS
 ...
