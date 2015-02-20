@@ -14,10 +14,7 @@ lang: en
 date: '2015-01-27'
 
 # pandoc format arguments
-# because of security these options are not parsed in the online version
-# other useful options could be: 
-# --from markdown_strict 
-# pdf: --chapters -V geometry:margin=1in -V documentclass=memoir -V lang=danish
+# because of security these options are limited
 format-arguments:
     pdf: >
         --number-sections
@@ -25,6 +22,6 @@ format-arguments:
         -V sansfont='Times New Roman' 
         -V monofont=Arial -V fontsize=12pt -V version=1.10 --toc
     html: -S --toc-depth=3 --chapters --number-sections --toc
-    epub: -S --epub-embed-font=OpenSans-Regular.ttf --epub-stylesheet=epub.css --epub-chapter-level=3 --number-sections --toc --epub-chapter-level=4
+    epub: -S --epub-embed-font=OpenSans-Regular.ttf --epub-stylesheet=epub.css --epub-chapter-level=3 --number-sections --toc
     mobi: ok
 ...
