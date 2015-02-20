@@ -143,9 +143,9 @@ In your meta tag you should add something like the following.
             -V monofont='WenQuanYi Micro Hei Mono'
 
 
-## Install local
+# Install local
 
-### Requirements: 
+## Requirements: 
 
 * Apache2
 * php5 >= 5.3
@@ -154,7 +154,7 @@ In your meta tag you should add something like the following.
 * texlive-full (for PDF support)
 * kindlegen (for Mobi support)
 
-### Build
+## Build
 
 First clone the base system into e.g. yoursite: 
 
@@ -193,7 +193,7 @@ We use a extra public directory, which you will need to add manual:
 
 Go to http://example.com and log in and add a repo. 
 
-### System config
+## System config
 
 If you make the above install, then the system is multi user by default. But you can make a few configuration changes in order to change this. This shows the default `gitbook.ini` file which is located in `modules/gitbook`.
 
@@ -210,5 +210,4 @@ gitbook_exports = 'epub,html,pdf'
 ; assets allowed for 'gitbook_allow'
 gitbook_allow_assets = 'css,jpeg,jpg,png,gif'
 ~~~
-
 
