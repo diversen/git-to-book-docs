@@ -21,7 +21,12 @@ The gittobook will prepend a `meta.yaml` file if one is found (for adding meta d
 ~~~yaml
 ---
 title: 'Git to book documentation'
-Subtitle: A simple way to generate PDF, EPUB, MOBI, HTML, using Markdown and git repositories. Output formats are generated using Pandoc.
+Subtitle: > 
+    A simple way to generate 
+    PDF, EPUB, MOBI, HTML, 
+    using Markdown and git repositories. 
+    Output formats are generated using Pandoc.' repositories. 
+    Output formats are generated using Pandoc.
 subject: Gittobook documentation
 author:
 - Dennis Bæk Iversen
