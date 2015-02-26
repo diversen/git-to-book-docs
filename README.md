@@ -25,7 +25,6 @@ Subtitle: >
     A simple way to generate 
     PDF, EPUB, MOBI, HTML, 
     using Markdown and git repositories. 
-    Output formats are generated using Pandoc.' repositories. 
     Output formats are generated using Pandoc.
 subject: Gittobook documentation
 author:
