@@ -18,7 +18,7 @@ If you work on a larger book you can just add some directories to keep you conte
 
 The gittobook will prepend a `meta.yaml` file if one is found (for adding meta data to the document - such as author, title, cover-image, build commands, etc). In the `meta.yaml` you can (and should) specify title, author, and other meta info used with pandoc. This is a very simple `meta.yaml`. 
 
-~~~.yaml
+~~~yaml
 ---
 title: 'Git to book documentation'
 Subtitle: A simple way to generate PDF, EPUB, MOBI, HTML, using Markdown and git repositories. Output formats are generated using Pandoc.
