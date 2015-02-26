@@ -2,17 +2,38 @@
 
 ## Quickstart
 
-**Gittobook** (git-to-book) is an easy way to write to multiple formats using markdown. It transforms the git repo with markdown files into Epub, Mobi, and PDF. These formats are often formats used to create books - online or for print. It is basically a bridge between **pandoc** ([http://pandoc.org](http://pandoc.org)) and **git**. Pandoc is used to generate the different formats, and git repositories are used to store the written markdown files, and assets, such as templates, css fonts, and images. The aim is to enable people to use git when writing large text documents, which has to be transformed into different formats.  
+**Gittobook** (git-to-book) is an easy way to write to multiple formats using markdown. It transforms a git repository containing markdown files into Epub, Mobi, and PDF. These formats are often formats used to create books - online ebooks or for books for print. 
 
-There is a online demo version, which you can log in to. This can be found on [http://gittobook.org](http://gittobook.org). The online version will export to Epub, Mobi, PDF and HTML, but with some restrictions in templates and options. 
+It is basically a bridge between **pandoc** ([http://pandoc.org](http://pandoc.org)) and **git**. Pandoc is used to generate the different output formats, and git repositories are used to store the written markdown files, and assets, such as templates, CSS, fonts, and images. The aim is to enable people to use git when writing large text documents, which has to be transformed into different formats.  
 
-When you add a new git repo url to the system, gittobook will checkout the repo, and look for any markdown files (`.md`). It will always checkout the `default` branch - this is often `master`, but does not have to be master. The markdown files found are collected into one document, which is then transformed using pandoc. You can browse this documentation on [https://github.com/diversen/git-to-book-docs](https://github.com/diversen/git-to-book-docs), which is the repo used to generate the gittobook docs - and you can also fork it and suggest edits. This document is just a simple `README.md`, which has been transformed by pandoc. 
+There is a online version, which you can log into. This can be found on [http://gittobook.org](http://gittobook.org). The online version will export to Epub, Mobi, PDF and HTML, but with some restrictions in templates and options. 
 
-If you work on a larger book you can just add some directories to keep you content better organised. The file structure is parsed so that any directories are first examined for markdown files, which should end on the `.md` extension. The way a directory is listed resembles the way [http://github.com](http://github.com) displays files, when looking at a repo online. This that means directories are displayed first, and then files. In order to keep you files in the right order you can add e.g. `01-`, `02-` etc. in front of directories and documents, as this will give you the sorting you want. 
+When you add a new git repo URL to the system, gittobook will checkout the repo, and look for any markdown files (`.md`). It will always checkout the `default` branch - this is often `master`, but does not have to be. The markdown files found are then collected into one document, which is transformed using pandoc. 
+
+You can browse this documentation on the github.com repository location ([https://github.com/diversen/git-to-book-docs](https://github.com/diversen/git-to-book-docs)) or on the gittobook.org website location ([http://gittobook.org/books/47/git-to-book-docs](http://gittobook.org/books/47/git-to-book-docs)). This is the repo used to generate the git-to-book-docs. You can  also fork it and suggest edits. This document is just a simple `README.md`. 
+
+If you work on a larger book you can just add some directories to keep you content better organised. The file structure is parsed so that any directories are first examined for markdown files, which should end on the `.md` extension. The way a directory is listed resembles the way [http://github.com](http://github.com) displays files, when looking at a repository online. This means directories are displayed first, and then files. In order to keep you files in the right order you can add e.g. `01-`, `02-` etc. in front of directories and documents, as this will give you the sorting you want. 
 
 ## Pandoc config / meta.yaml
 
-The gittobook will prepend a `meta.yaml` file if one is found (for adding meta data to the document - such as author, title, cover-image, build commands, etc). In the `meta.yaml` you can (and should) specify title, author, and other meta info used with pandoc. You can also specify build commands used, when pandoc executes the command. You can see an example here: [https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml](https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml). You will see that the `format-arguments` are specific to gittobook, otherwise it is a standard pandoc `.yaml file`. The `format-arguments` are the command line options given to pandoc. You can also add files to `ignore-files`, e.g. `README.md`.
+The gittobook will prepend a `meta.yaml` file if one is found (for adding meta data to the document - such as author, title, cover-image, build commands, etc). In the `meta.yaml` you can (and should) specify title, author, and other meta info used with pandoc. This is a very simple `meta.yaml`. 
+
+~~~.yaml
+---
+title: 'Git to book documentation'
+Subtitle: A simple way to generate PDF, EPUB, MOBI, HTML, using Markdown and git repositories. Output formats are generated using Pandoc.
+subject: Gittobook documentation
+author:
+- Dennis Bæk Iversen
+keywords: ebooks, pandoc, pdf, html
+rights: Creative Commons Non-Commercial Share Alike 3.0
+language: en-US
+lang: en
+tags: [pandoc, pdf, epub, mobi creation]
+...
+~~~
+
+You can also specify build commands used, when pandoc executes the command. You can see an example here: [https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml](https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml). You will see that the `format-arguments` are specific to gittobook, otherwise it is a standard pandoc `.yaml file`. The `format-arguments` are the command line options given to pandoc. You can also add files to `ignore-files`, e.g. `README.md`.
 
 ## Useful Resources
 
