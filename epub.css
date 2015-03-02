@@ -10,7 +10,8 @@ body {
     margin: 5%; 
     text-align: justify; 
     font-size: medium; 
-    font-family: "OpenSans";    
+    font-family: "OpenSans";
+    font-size: 80%;    
 }
 
 code { font-family: monospace; }
