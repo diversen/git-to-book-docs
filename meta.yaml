@@ -27,7 +27,7 @@ format-arguments:
         -V mainfont='Latin Modern Roman' 
         -V sansfont='Times New Roman' 
         -V monofont=Arial -V fontsize=12pt -V version=1.10
-    html: -S --css=epub.css --toc-depth=3 --chapters --number-sections --toc
+    html: --self-contained -S --css=epub.css --toc-depth=3 --chapters --number-sections --toc
     epub: -S --epub-embed-font=OpenSans-Regular.ttf --epub-chapter-level=3 --number-sections --toc
     mobi: ok
 ...

@@ -82,7 +82,6 @@ Specify the number of section levels to include in the table of contents. The de
 
     --toc-depth=[1-6]
 
-
 Syntax highlight filter: Options are pygments (the default), kate, monochrome, espresso, zenburn, haddock, and tango.
 
     --highlight-style=[string]
@@ -103,11 +102,6 @@ Number section headings in LaTeX, ConTeXt, HTML, or EPUB output.
 
     -N
     --number-sections
-
-Link to a CSS style sheet
-
-    -c=[path/style.css]
-    --css=[path/to/style.css]
 
 Use the specified CSS file to style the EPUB
 
