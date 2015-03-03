@@ -23,6 +23,7 @@ format-arguments:
     pdf: >
         -S
         --toc
+        --no-highlight
         --number-sections
         --template=templates/test.latex
         -V mainfont='Latin Modern Roman' 
