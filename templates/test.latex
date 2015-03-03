@@ -118,7 +118,7 @@
 % If you have a copy you might try it; as it is
 % I will comment it out and supply something more certain to be around:
 
-\setmainfont{Times Roman}
+\setmainfont{Times New Roman}
 
 % Properly one should specify a sanserif font and a monospace font
 % see e.g. the example of Kieran Healy:
