@@ -18,6 +18,12 @@ Images should be placed in a directory called images at base level of the git re
 
 And then images are inserted as normal: 
 
+e.g: 
+
+    ![gittobook image](images/gittobook.png "Gittobook logo")
+
+Becomes:
+
 ![gittobook image](images/gittobook.png "Gittobook logo")
 
 ## Pandoc config / meta.yaml
