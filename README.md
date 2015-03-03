@@ -28,7 +28,7 @@ Becomes:
 
 ## Pandoc config / meta.yaml
 
-The gittobook will prepend a `meta.yaml` file if one is found (for adding meta data to the document - such as author, title, cover-image, build commands, etc). In the `meta.yaml` you can (and should) specify title, author, and other meta info used with pandoc. This is a very simple `meta.yaml`. 
+The gittobook will prepend a `meta.yaml` file if one is found (for adding meta data to the document - such as author, title, cover-image, build commands, etc). In the `meta.yaml` you can (and should) specify title, author, and other meta info used with pandoc. This is quite a simple `meta.yaml`. 
 
 ~~~yaml
 ---
@@ -45,42 +45,16 @@ keywords: ebooks, pandoc, pdf, html
 rights: Creative Commons Non-Commercial Share Alike 3.0
 language: en-US
 lang: en
+cover-image: images/cover.jpg
 tags: [pandoc, pdf, epub, mobi creation]
 ...
 ~~~
 
-You can also specify build commands used, when pandoc executes the command. You can see an example here: [https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml](https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml). You will see that the `format-arguments` are specific to gittobook, otherwise it is a standard pandoc `.yaml file`. The `format-arguments` are the command line options given to pandoc. You can also add files to `ignore-files`, e.g. `README.md`.
+If there is not found any meta.yaml, then the books will be built with some default options. Title becomes `Unknown` and author becomes `John Doe`. If there is no cover-image, then the system will generate a default cover image.  
 
-## Useful Resources
+You can also specify build commands used, when pandoc executes the command. You can see an example here: [https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml](https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml). You will see that the `format-arguments` are specific to gittobook, otherwise it is a standard pandoc `.yaml file`. The `format-arguments` are the command line options given to pandoc. You can also add files to `ignore-files`, e.g. `README.md`. 
 
-Template variables 
-
-[http://johnmacfarlane.net/pandoc/README.html#templates](http://johnmacfarlane.net/pandoc/README.html#templates)
-
-The pandoc markdown.  
-
-[http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html](http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html)
-
-Math LaTex:
-
-[http://en.wikibooks.org/wiki/LaTeX/Mathematics](http://en.wikibooks.org/wiki/LaTeX/Mathematics)
-
-This: 
-
-    $$
-    \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-    $$
-
-renders:
- 
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
-
-
-Some other Pandoc templates:
-
-[https://github.com/jgm/pandoc/wiki/User-contributed-templates](https://github.com/jgm/pandoc/wiki/User-contributed-templates)
+If there is no `format-arguments` then some default `format-arguments` will be used. 
 
 ## Pandoc options
 
@@ -179,6 +153,36 @@ In your meta tag you should add something like the following.
             -V sansfont='WenQuanYi Micro Hei Mono' 
             -V monofont='WenQuanYi Micro Hei Mono'
 
+## Useful Resources
+
+Template variables 
+
+[http://johnmacfarlane.net/pandoc/README.html#templates](http://johnmacfarlane.net/pandoc/README.html#templates)
+
+The pandoc markdown.  
+
+[http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html](http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html)
+
+Math LaTex:
+
+[http://en.wikibooks.org/wiki/LaTeX/Mathematics](http://en.wikibooks.org/wiki/LaTeX/Mathematics)
+
+This: 
+
+    $$
+    \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+    $$
+
+renders:
+ 
+$$
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+$$
+
+
+Some other Pandoc templates:
+
+[https://github.com/jgm/pandoc/wiki/User-contributed-templates](https://github.com/jgm/pandoc/wiki/User-contributed-templates)
 
 # Install local
 
