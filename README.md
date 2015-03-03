@@ -69,7 +69,7 @@ Specify the base level for headers (defaults to 1)
 
     --base-header-level=[1-6]
 
-Produce output with an appropriate header and footer 
+Produce output with an appropriate header and footer.
 
     -s
     --standalone
