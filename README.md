@@ -14,6 +14,12 @@ You can browse this documentation on the github.com repository location ([https:
 
 If you work on a larger book you can just add some directories to keep you content better organised. The file structure is parsed so that any directories are first examined for markdown files, which should end on the `.md` extension. The way a directory is listed resembles the way [http://github.com](http://github.com) displays files, when looking at a repository online. This means directories are displayed first, and then files. In order to keep you files in the right order you can add e.g. `01-`, `02-` etc. in front of directories and documents, as this will give you the sorting you want. 
 
+Images should be placed in a directory called images at base level of the git repo. 
+
+And then images are inserted as normal: 
+
+![gittobook image](images/gittobook.png "Gittobook logo")
+
 ## Pandoc config / meta.yaml
 
 The gittobook will prepend a `meta.yaml` file if one is found (for adding meta data to the document - such as author, title, cover-image, build commands, etc). In the `meta.yaml` you can (and should) specify title, author, and other meta info used with pandoc. This is a very simple `meta.yaml`. 
