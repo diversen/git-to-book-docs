@@ -24,7 +24,7 @@ format-arguments:
         -S
         --toc
         --number-sections
-        --template=templates/test3.latex
+        --template=templates/test.latex
         -V mainfont='Latin Modern Roman' 
         -V sansfont='Times New Roman' 
         -V monofont=Arial -V fontsize=12pt -V version=1.10
