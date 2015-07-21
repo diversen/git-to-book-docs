@@ -198,6 +198,10 @@ First clone the base system into e.g. yoursite:
 Enter the base system: 
 
     cd yoursite
+    
+Install dependencies. May take some time: 
+    
+    composer update
 
 Enable apache2 host:
 
@@ -208,6 +212,7 @@ Clone install profile git-to-book-profile
 
     cd profiles 
     git clone https://github.com/diversen/git-to-book-profile
+    cd ..
 
 Run install command: 
 
