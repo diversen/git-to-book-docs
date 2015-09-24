@@ -50,7 +50,7 @@ tags: [pandoc, pdf, epub, mobi creation]
 ...
 ~~~
 
-If there is not found any meta.yaml, then the books will be built with some default options. Title becomes `Unknown` and author becomes `John Doe`. If there is no `cover-image` (for Epubs and Mobi files), then the system will generate a default cover image.  
+If there is not found any meta.yaml, then the books will be built with some default options. Title becomes `Unknown` and author becomes `John Doe`. If there is no `cover-image` (for Epubs and Mobi files), then the system will generate a default cover image.
 
 You can also specify build commands used, when pandoc executes the command. You can see an example here: [https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml](https://github.com/diversen/git-to-book-docs/blob/master/meta.yaml). You will see that the `format-arguments` are specific to gittobook, otherwise it is a standard pandoc `.yaml file`. The `format-arguments` are the command line options given to pandoc. You can also add files to `ignore-files`, e.g. `README.md`. 
 
