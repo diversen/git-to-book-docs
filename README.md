@@ -212,7 +212,7 @@ Run install command:
 
     ./coscli.sh prompt-install --install
 
-You will be asked about DB configuration,  and version to install. Use the  `master`. After writing the `config/config.ini` file the system will install all the profile modules from git repos. At last the system will prompt you for a super user. Enter an email and password
+You will be asked about DB configuration,  and version to install. Use a `tag` or `master`. After writing the `config/config.ini` file the system will install all the profile modules from git repos. At last the system will prompt you for a super user. Enter an email and password
 
 Set correct perms for public files after install (e.g. upload folder)
 
