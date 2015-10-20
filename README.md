@@ -222,6 +222,10 @@ Set correct perms for public files after install (e.g. upload folder)
 
 We use a extra public directory, which you will need to add manual:
 
+    mkdir htdocs/books
+    
+Set correct ownership:
+    
     sudo chown www-data:www-data htdocs/books
 
 Go to http://example.com and log in and add a repo. 
