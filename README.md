@@ -183,13 +183,15 @@ Some other Pandoc templates:
 ## Requirements: 
 
 * Apache2
-* php5 >= 5.3
+* php5 >= 5.5
 * mysql-server
 * pandoc
 * texlive-full (for PDF support)
 * kindlegen (for Mobi support)
 
 ## Build
+
+The source code can be found on: [https://github.com/diversen/php-git-to-book](https://github.com/diversen/php-git-to-book). 
 
 First clone the base system into e.g. yoursite: 
 
