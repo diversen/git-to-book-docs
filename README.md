@@ -24,7 +24,7 @@ e.g:
 
 Becomes:
 
-![gittobook image](assets/gittobook.png "Gittobook logo")
+![gittobook image](images/gittobook.png "Gittobook logo")
 
 ## Pandoc config / meta.yaml
 
