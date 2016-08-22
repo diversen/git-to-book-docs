@@ -187,6 +187,7 @@ Some other Pandoc templates:
 * mysql-server
 * pandoc
 * texlive-full (for PDF support)
+* extra fonts - sudo apt-get install msttcorefonts
 * kindlegen (for Mobi support)
 
 ## Build
