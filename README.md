@@ -2,7 +2,7 @@
 
 ## Very quick start and demo. 
 
-Login to https://gittobook.org, and add a repo with some markdown files ending in `.md` or `.markdown`. Then `
+Login to [https://gittobook.org](https://gittobook.org), and add a repo with some markdown files ending in `.md` or `.markdown`. Then `
 HTML`, `Epub`, and `MOBI` versions will be created, which then can be downloaded. 
 
 ## less quicker start
