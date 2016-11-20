@@ -1,6 +1,10 @@
 # Git to Book Documentation
 
-## Quickstart
+## Very quick start and demo. 
+
+Add a repo to https://gittobook.org with some markdown files ending in `.md` or `.markdown`. Then `Epub` and `MOBI` versions will be created, which then can be downloaded. 
+
+## less quicker start
 
 **Gittobook** (git-to-book) is an easy way to write to multiple formats using markdown. It transforms a git repository containing markdown files into Epub, Mobi, and PDF. These formats are often formats used to create books - online ebooks or for books for print. 
 
@@ -12,9 +16,9 @@ When you add a new git repo URL to the system, gittobook will checkout the repo,
 
 You can browse this documentation on the github.com repository location ([https://github.com/diversen/git-to-book-docs](https://github.com/diversen/git-to-book-docs)) or on the gittobook.org website location ([http://gittobook.org/books/47/git-to-book-docs](http://gittobook.org/books/47/git-to-book-docs)). This is the repo used to generate the git-to-book-docs. You can  also fork it and suggest edits. This document is just a simple `README.md`. 
 
-If you work on a larger book you can just add some directories to keep you content better organised. The file structure is parsed so that any directories are first examined for markdown files, which should end on the `.md` extension. The way a directory is listed resembles the way [http://github.com](http://github.com) displays files, when looking at a repository online. This means directories are displayed first, and then files. In order to keep you files in the right order you can add e.g. `01-`, `02-` etc. in front of directories and documents, as this will give you the sorting you want. 
+If you work on a larger book you can just add some directories to keep you content better organised. The file structure is parsed so that any directories are first examined for markdown files, which should end on the `.md` or `.markdown` extension. The way a directory is listed resembles the way [http://github.com](http://github.com) displays files, when looking at a repository online. This means directories are displayed first, and then files. In order to keep you files in the right order you can add e.g. `01-`, `02-` etc. in front of directories and documents, as this will give you the sorting you want. 
 
-Images should be placed in a directory called images at base level of the git repo. 
+Images could be placed in a directory called `images` at base level of the git repo. 
 
 And then images are inserted as normal: 
 
@@ -25,6 +29,14 @@ e.g:
 Becomes:
 
 ![gittobook image](images/gittobook.png "Gittobook logo")
+
+But you could place images anywhere in your repo, e.g like this. 
+
+        ![gittobook image](gittobook.png "Gittobook logo")
+        
+Becomes:
+
+![gittobook image](gittobook.png "Gittobook logo")
 
 ## Pandoc config / meta.yaml
 
@@ -251,6 +263,3 @@ gitbook_exports = 'epub,html,pdf'
 gitbook_allow_assets = 'css,jpeg,jpg,png,gif'
 ~~~
 
-# Tests
-
-[epub css](epub.css)
