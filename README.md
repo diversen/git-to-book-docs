@@ -18,9 +18,7 @@ You can browse this documentation on the github.com repository location ([https:
 
 If you work on a larger book you can just add some directories to keep you content better organised. The file structure is parsed so that any directories are first examined for markdown files, which should end on the `.md` or `.markdown` extension. The way a directory is listed resembles the way [http://github.com](http://github.com) displays files, when looking at a repository online. This means directories are displayed first, and then files. In order to keep you files in the right order you can add e.g. `01-`, `02-` etc. in front of directories and documents, as this will give you the sorting you want. 
 
-Images could be placed in a directory called `images` at base level of the git repo. 
-
-And then images are inserted as normal: 
+Images are inserted as normal. Just remember to have the correct path to the image: 
 
 e.g: 
 
@@ -30,13 +28,6 @@ Becomes:
 
 ![gittobook image](images/gittobook.png "Gittobook logo")
 
-But you could place images anywhere in your repo, e.g like this. 
-
-        ![gittobook image](gittobook.png "Gittobook logo")
-        
-Becomes:
-
-![gittobook image](gittobook.png "Gittobook logo")
 
 ## Pandoc config / meta.yaml
 
