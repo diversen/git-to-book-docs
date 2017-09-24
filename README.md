@@ -225,7 +225,7 @@ Set correct perms for public files after install (e.g. upload folder)
 
     // you will need to be root user as we change
     // the perms to be www-data
-    sudo ./coscli.sh file --chmod-files
+    sudo ./coscli.sh file --chmod-system
 
 We use a extra public directory, which you will need to add manual:
 
